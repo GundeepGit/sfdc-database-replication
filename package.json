@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "debug": "ndb salesforce-database.js"
+  },
+  "dependencies": {
+    "amqplib": "^0.10.3",
+    "jsforce": "^1.11.1",
+    "mysql2": "^3.6.0",
+    "mysql2-promise": "^0.1.4",
+    "ndb": "^1.1.5",
+    "opossum": "^8.1.1",
+    "winston": "^3.10.0",
+    "winston-daily-rotate-file": "^4.7.1"
+  }
+}
