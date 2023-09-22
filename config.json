@@ -1,0 +1,28 @@
+{
+  "salesforce": {
+    "username": "mvinayraj08302023@deloitte.com",
+    "password": "Deloitte@123",
+    "securityToken": "BrQ1oeVsHO0hNs6qRFbyg8I8s",
+    "consumerKey": "your_consumer_key",
+    "consumerSecret": "your_consumer_secret",
+    "loginUrl" : "https://login.salesforce.com"
+  },
+  "mysql": {
+    "host": "localhost",
+    "user": "root",
+    "password": "Inhumans@2020",
+    "database": "salesforce_repl"
+  },
+  "rabbitmq": {
+    "url" : "amqps://admin:o4Abo8WQ2sHNT9Pwafm23bRZnZtYzarE@0ymsi6.stackhero-network.com:5671/",
+    "queueName" : "cdc_events_queue"
+  },
+  "objectNames": [
+    "Account",
+    "Contact"
+  ],
+  "batchSize": 100,
+  "throttleInterval": 100,
+  "numThreads": 4,
+  "concurrency" : 10
+}
