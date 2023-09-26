@@ -15,13 +15,17 @@
   },
   "rabbitmq": {
     "url" : "amqps://admin:o4Abo8WQ2sHNT9Pwafm23bRZnZtYzarE@0ymsi6.stackhero-network.com:5671/",
-    "queueName" : "cdc_events_queue"
+    "queueName" : "cdc_events_queue",
+    "batchQueue" : "batch_queue",
+    "tls" : {
+      "ca" : "trustid-x3-root.pem"
+    }
   },
   "objectNames": [
     "Account",
     "Contact"
   ],
-  "batchSize": 100,
+  "batchSize": 10000,
   "throttleInterval": 100,
   "numThreads": 4,
   "concurrency" : 10
